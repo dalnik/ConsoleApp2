@@ -8,7 +8,7 @@ namespace ConsoleApp2
 {
     class Program
     {
-        static void Main(string[] args)
+        /* static void Main(string[] args)
         {
             //запросить имя пользователя
             Console.Write("Введите имя пользователя и нажмите Enter:");
@@ -33,7 +33,33 @@ namespace ConsoleApp2
               Console.Write("Программа завершена. Нажмите Enter для выхода...");
               Console.ReadLine();
         }
+        */
 
+
+        static void Main()
+        {
+            //нахождение минимального числа
+            Console.Write("Введите первое число и нажмите Enter: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Введите второе число и нажмите Enter: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Введите третье число и нажмите Enter: ");
+            int z = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Введите четвертое число и нажмите Enter: ");
+            int v = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(FindMin(x, y, z, v));
+            Console.ReadKey();
+        }
+            static int FindMin(int x, int y, int z, int v)
+        {
+            return Math.Min(x, Math.Min(y, Math.Min(z, v)));
         }
     }
+}
+
+    
 
