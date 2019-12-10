@@ -38,6 +38,7 @@ namespace ConsoleApp2
 
         static void Main()
         {
+            /*
             //нахождение минимального числа
             Console.Write("Введите первое число и нажмите Enter: ");
             int x = Convert.ToInt32(Console.ReadLine());
@@ -57,6 +58,24 @@ namespace ConsoleApp2
             static int FindMin(int x, int y, int z, int v)
         {
             return Math.Min(x, Math.Min(y, Math.Min(z, v)));
+        }
+        */
+            //возведение в вкадрат
+            {
+                Console.WriteLine("возведение в квадрат");
+                Console.Write("Ведите число: ");
+                double a = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("{0} в квадрате {1}", a, Math.Pow(a, 2));
+                Console.ReadLine();
+            }
+            //возведение в куб
+            {
+                Console.WriteLine("возведение в куб");
+                Console.Write("Ведите число: ");
+                double a = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("{0} в кубе {1}", a, Math.Pow(a, 3));
+                Console.ReadLine();
+            }
         }
     }
 }
